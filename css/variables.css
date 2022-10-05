@@ -1,4 +1,6 @@
 :root {
     --first-color: white;
     --second-color: #6f7276;
+    --header-bg: rgba(8, 11, 18, 0.7);
+    --main-bg: #141922;
 }

@@ -1,5 +1,4 @@
 @import url(variables.css);
-
 /* --------------------
     RESET
 -------------------- */
@@ -8,6 +7,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 
 /* --------------------
    COMMONS
@@ -25,11 +25,19 @@
 .center {
     justify-content: center;
 }
+.justify-end {
+    justify-content: flex-end;
+}
 .align-center {
     align-items: center;
 }
-footer a {
+a {
     text-decoration: none;
+}
+header a {
+    color: var(--first-color);
+}
+footer a {
     color: var(--second-color);
 }
 /* --------------------
@@ -40,20 +48,31 @@ body {
     height: 100vh;
     color: var(--first-color);
 }
+
+/* --------------------
+   HEADER
+-------------------- */
 header {
     position: fixed;
     top: 0;
     right: 0;
     left: 14.375rem;
     height: 5.5rem;
-    background-color: blue;
+    padding-right: .625rem;
+    background-color: var(--header-bg);
 }
+header span {
+    padding: .9375rem 2.8125rem;
+    border: .0625rem solid var(--first-color);
+    border-radius: 1.875rem;
+}
+
 .page-container {
     display: flex;
     height: calc(100% - 5.625rem);
 }
 main {
-    background-color: brown;
+    background-color: var(--main-bg);
     width: calc(100% - 14.375rem);
     overflow-y: auto;   
 }
