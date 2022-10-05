@@ -25,6 +25,9 @@ footer {
 .col-nav-left {
     height: 100%;
 }
+.col-nav-left i {
+    color: var(--second-color);
+}
 .album-img {
     height: 100%;
 }
