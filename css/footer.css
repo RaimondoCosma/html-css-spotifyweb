@@ -68,6 +68,7 @@ footer {
     height: .625rem;
     border-radius: 50%;
     background-color: var(--first-color);
+    cursor: pointer;
 }
 .nav-right .volume {
     background-color: var(--second-color);
@@ -90,6 +91,7 @@ footer {
     height: .625rem;
     border-radius: 50%;
     background-color: var(--first-color);
+    cursor: pointer;
 }
 
 /* --------------------

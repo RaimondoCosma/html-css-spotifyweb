@@ -46,11 +46,15 @@ header a {
 footer a {
     color: var(--second-color);
 }
+i {
+    cursor: pointer;
+}
 /* --------------------
    BODY
 -------------------- */
 body {
     font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
     height: 100vh;
     color: var(--first-color);
 }
@@ -85,7 +89,26 @@ main {
     width: calc(100% - 14.375rem);
     overflow-y: auto;   
 }
+.menu {
+    padding-top: 6.875rem;
+}
+.menu li {
+    position: relative;
+    padding: .5rem .625rem;
+}
+.menu li:first-child::after {
+    content: '';
+    position: absolute;
+    background: var(--underline);
+    bottom: 0;
+    left: calc(50% - .9375rem);
+    width: 1.875rem;
+    height: .1875rem;
+}
 
+.menu li a {
+    font-size: .75rem;
+}
 
 
 /* --------------------
