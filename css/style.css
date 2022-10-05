@@ -1,0 +1,59 @@
+/* --------------------
+    RESET
+-------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --------------------
+   BODY
+-------------------- */
+body {
+    height: 100vh;
+}
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 14.375rem;
+    height: 5.5rem;
+    background-color: blue;
+}
+.page-container {
+    display: flex;
+    height: calc(100% - 5.625rem);
+}
+main {
+    background-color: brown;
+    width: calc(100% - 14.375rem);
+    overflow-y: auto;   
+}
+aside {
+    width: 14.375rem;
+    background-color: antiquewhite;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 5.625rem;
+    background-color: black;
+}
+
+/* --------------------
+   QUERY
+-------------------- */
+@media screen and (max-width: 600px) {
+    aside {
+        width: 3.125rem;
+    }
+    main {
+        width: calc(100% - 3.125rem);
+    }
+    header {
+        left: 3.125rem;
+    }    
+}
