@@ -8,6 +8,19 @@
 }
 
 /* --------------------
+   COMMONS
+-------------------- */
+.row {
+    display: flex;
+    align-items: center;
+}
+.space-between {
+    justify-content: space-between;
+}
+.center {
+    justify-content: center;
+}
+/* --------------------
    BODY
 -------------------- */
 body {
@@ -34,13 +47,25 @@ aside {
     width: 14.375rem;
     background-color: antiquewhite;
 }
+
+/* --------------------
+   BODY
+-------------------- */
 footer {
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
     height: 5.625rem;
-    background-color: black;
+    background-color: #282828;
+}
+.nav-left, .nav-right {
+    width: 14.375rem;
+    height: 100%;
+    background-color: chartreuse;
+}
+.nav-middle {
+    width: calc(100% - 28.75rem);
 }
 
 /* --------------------
