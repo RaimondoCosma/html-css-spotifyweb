@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap" rel="stylesheet">
+    <!-- /Google Font -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- /Font Awesome -->
     <link rel="stylesheet" href="css/style.css">
     <title>Spotify</title>
 </head>
@@ -14,16 +22,43 @@
         <main></main>
     </div>
     <footer class="nav row">
-            <div class="nav-left row space-between">
-                <div class="col-nav-left"></div>
-                <div class="col-nav-left"></div>
+        <!-- Footer -->
+        <!-- Left nav -->
+        <div class="nav-left row space-between">
+            <div class="col-nav-left">
+                <div class="album-img row">
+                    <img src="img/sinister.jpeg" alt="sinister">
+                    <div class="group-title">
+                        <h4>Sinister</h4>
+                        <span><a href="#">Brano nome</a></span>
+                    </div>
+                </div>
             </div>
-            <div class="nav-middle">
-
+            <div class="col-nav-left"></div>
+        </div>
+        <!-- /Left nav -->
+        <!-- middle nav -->
+        <div class="nav-middle">
+            <div class="media-player row center">
+                <i class="fa-solid fa-shuffle"></i>
+                <i class="fa-solid fa-backward-step"></i>
+                <i class="fa-regular fa-circle-play"></i>
+                <i class="fa-solid fa-forward-step"></i>
+                <i class="fa-solid fa-rotate-right"></i>
             </div>
-            <div class="nav-right row space-between">
-
+            <div class="timing-bar row center">
+                <small class="minutes">0:25</small>
+                <div class="bar"></div>
+                <small class="minutes">4:25</small>
             </div>
+        </div>
+        <!-- /middle nav -->
+        <!-- right nav -->
+        <div class="nav-right row space-between">
+            
+        </div>
+        <!-- /right nav -->
+        <!-- /Footer -->
     </footer>
 </body>
 </html>

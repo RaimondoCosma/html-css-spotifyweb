@@ -20,11 +20,17 @@
 .center {
     justify-content: center;
 }
+footer a {
+    text-decoration: none;
+    color: #6f7276;
+}
 /* --------------------
    BODY
 -------------------- */
 body {
+    font-family: 'Montserrat', sans-serif;
     height: 100vh;
+    color: white;
 }
 header {
     position: fixed;
@@ -49,7 +55,7 @@ aside {
 }
 
 /* --------------------
-   BODY
+   FOOTER
 -------------------- */
 footer {
     position: fixed;
@@ -61,11 +67,39 @@ footer {
 }
 .nav-left, .nav-right {
     width: 14.375rem;
-    height: 100%;
-    background-color: chartreuse;
+    height: 60%;
 }
 .nav-middle {
     width: calc(100% - 28.75rem);
+    height: 100%;
+    padding: .625rem 0;
+}
+.col-nav-left {
+    height: 100%;
+}
+.album-img {
+    height: 100%;
+}
+.album-img img {
+    height: 100%;
+    margin: 0 .625rem;
+}
+.media-player {
+    margin-bottom: .625rem;
+}
+.media-player .fa-circle-play {
+    font-size: 1.875rem;
+    margin: 0 1.875rem;
+}
+.media-player i {
+    margin: 0 .6875rem;
+}
+.timing-bar .bar {
+    background-color: #6f7276;
+    width: 50%;
+    height: .25rem;
+    margin: 0 1.25rem;
+    border-radius: .625rem;
 }
 
 /* --------------------
