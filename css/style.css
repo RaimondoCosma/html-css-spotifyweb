@@ -116,9 +116,20 @@ main {
 }
 .recent-album {
     padding: 1.875rem 0 2.5rem;
+    align-items: stretch;
+}
+.col-album {
+    width: 16%;
+}
+.col-album .box-image {
+    width: 100%;
+}
+.col-album img {
+    width: 100%;
 }
 .recent-album .box-image {
     position: relative;
+    margin-bottom: 1.125rem;
 }
 .bg-opacity {
     position: absolute;
@@ -142,7 +153,7 @@ main {
     text-align: center;
 }
 .recent-album .title h3 {
-    padding: 1.125rem 0 .625rem;
+    padding-bottom: .625rem;
 }
 .recent-album .title small {
     color: var(--second-color);
