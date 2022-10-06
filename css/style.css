@@ -49,6 +49,9 @@ footer a {
 i {
     cursor: pointer;
 }
+img {
+    display: block;
+}
 /* --------------------
    BODY
 -------------------- */
@@ -114,7 +117,44 @@ main {
 .recent-album {
     padding: 1.875rem 0 2.5rem;
 }
-
+.recent-album .box-image {
+    position: relative;
+}
+.bg-opacity {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: opacity 0.3s;
+}
+.box-image .fa-circle-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    font-size: 3.75rem;
+    transition: opacity 0.3s;
+}
+.recent-album .title {
+    text-align: center;
+}
+.recent-album .title h3 {
+    padding: 1.125rem 0 .625rem;
+}
+.recent-album .title small {
+    color: var(--second-color);
+}
+.hover-show {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.col-album:hover .hover-show {
+    opacity: 1;
+    cursor: pointer;
+}
 /* --------------------
    QUERY
 -------------------- */
