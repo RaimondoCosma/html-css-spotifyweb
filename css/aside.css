@@ -7,6 +7,8 @@ aside {
     background-color: var(--aside-bg);
     padding: 1.25rem 1.25rem .625rem;
     color: var(--second-color);
+    display: flex;
+    flex-direction: column;
 }
 .logo {
     width: 80%;
@@ -17,14 +19,29 @@ aside {
 .side-nav li {
     margin-bottom: .75rem;
 }
+.side-nav li:first-child {
+    position: relative;
+}
+.side-nav li:first-child::before {
+    content: '';
+    position: absolute;
+    background: var(--underline);
+    width: .1875rem;
+    height: 2.1875rem;
+    left: -1.25rem;
+    top: -0.3125rem;
+}
 .side-nav-img {
     height: 1.5625rem;
     display: block;
     margin-right: 10px;
 }
 .playlist-nav {
+    display: flex;
+    flex-direction: column;
     margin-top: 1.875rem;
-    overflow-y: auto;
+    overflow-y: hidden;
+    flex-grow: 1;
 }
 .playlist-nav h4 {
     color: var(--first-color);
@@ -37,13 +54,12 @@ aside {
     font-size: 2.1875rem;
     margin-right: .625rem;
 }
+.new-list {
+    flex-grow: 1;
+    overflow-y: auto;
+}
 .new-list li {
     margin-bottom: 1.25rem;
-}
-.account {
-    position: absolute;
-    bottom: .625rem;
-    left: .625rem;
 }
 .download {
     padding-bottom: .625rem;
@@ -58,6 +74,10 @@ aside {
 }
 .user h4 {
     padding-bottom: 0;
+}
+.logo-mobile {
+    height: 1.875rem;
+    display: none;
 }
 .aside-mobile {
     display: none;
@@ -87,7 +107,12 @@ aside {
     .hide {
         display: none;
     }
-    .aside-mobile {
+    .show {
         display: block;
+        position: relative;
+        left: -0.5rem;
+    }
+    .account {
+        margin-top: auto;
     }
 }
