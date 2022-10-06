@@ -101,6 +101,16 @@ aside {
 }
 
 /* --------------------
+   HOVER
+-------------------- */
+.hover-first-color {
+    transition: color 0.3s;
+}
+.hover-first-color:hover {
+    color: var(--first-color);
+    cursor: pointer;
+}
+/* --------------------
    QUERY
 -------------------- */
 @media screen and (max-width: 600px) {

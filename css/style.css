@@ -1,6 +1,8 @@
 @import url(variables.css);
 @import url(footer.css);
 @import url(aside.css);
+@import url(main.css);
+
 /* --------------------
     RESET
 -------------------- */
@@ -58,7 +60,7 @@ img {
 .recently-played > h2 {
     margin-left: .625rem;
 }
-.for-you > h2 , .for-you > small {
+.for-you > h2 , .for-you > small, .most-popular > h2, .most-popular > small {
     margin-left: .625rem;
 }
 /* --------------------
@@ -80,7 +82,7 @@ header {
     right: 0;
     left: 14.375rem;
     height: 5.5rem;
-    padding-right: .625rem;
+    padding-right: 1.25rem;
     background-color: var(--header-bg);
     z-index: 100;
 }
@@ -108,7 +110,12 @@ main {
 }
 .menu li {
     position: relative;
+    color: var(--second-color);
     padding: .5rem .625rem;
+    transition: color 0.3s;
+}
+.menu li:hover {
+    color: var(--first-color);
 }
 .menu li:first-child::after {
     content: '';
@@ -122,70 +129,16 @@ main {
 .menu li a {
     font-size: .75rem;
 }
-
-/* --------------------
-   RECENTLY PLAYED
--------------------- */
-.recently-played {
-    padding: 2.5rem 0;
-}
-.recent-album {
-    padding-top: 1.875rem;
-}
-.col-album {
-    margin: 0 .625rem;
-    width: calc(100% / 6 - 20px);
-}  
-.col-album .box-image img {
-    width: 100%;
-}
-.recent-album .box-image {
-    position: relative;
-    margin-bottom: 1.125rem;
-}
-.bg-opacity {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.6);
-    transition: opacity 0.3s;
-}
-.box-image .fa-circle-play {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    font-size: 3.75rem;
-    transition: opacity 0.3s;
-}
-.recent-album .title {
-    text-align: center;
-}
-.recent-album .title h3 {
-    padding-bottom: .625rem;
-}
-.recent-album .title small {
-    color: var(--second-color);
-}
-
-/* --------------------
-   FOR YOU
--------------------- */
-.for-you {
-    padding-bottom: 2.5rem;
-}
-.for-you h2 {
-    padding-bottom: .75rem;
-}
-.for-you small {
-    color: var(--second-color);
-}
 /* --------------------
    HOVER
 -------------------- */
+.scale {
+    transition: transform 0.3s;
+}
+.scale:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
 .hover-show {
     opacity: 0;
     transition: opacity 0.3s;
@@ -194,6 +147,24 @@ main {
     opacity: 1;
     cursor: pointer;
 }
+.white-underline {
+    transition: 0.3s;
+}
+.white-underline:hover {
+    color: var(--first-color);
+    text-decoration: underline;
+}
+.hover-bar {
+    transition: background-color 0.3s;
+}
+.hover-bar:hover .circle-head {
+    background-color: var(--underline);
+    cursor: pointer;
+}
+.hover-bar:hover .circle-head::after {
+    opacity: 1;
+}
+
 /* --------------------
    QUERY
 -------------------- */

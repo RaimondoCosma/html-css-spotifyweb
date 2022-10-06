@@ -18,7 +18,7 @@
 <body>
     <!-- Header -->
     <header class="row justify-end">
-        <span><a href="#">EFFETTUA L'UPGRADE</a></span>
+        <span class="scale"><a href="#">EFFETTUA L'UPGRADE</a></span>
     </header>
     <!-- /Header -->
     <div class="page-container">
@@ -30,26 +30,26 @@
             </div>
             <div class="side-nav">
                 <ul>
-                    <li><a class="row" href="#"><img class="side-nav-img show" src="img/home.svg" alt="#"><span class="hide">Home</span></a></li>
-                    <li><a class="row" href="#"><img class="side-nav-img show" src="img/search.svg" alt="#"><span class="hide">Cerca</span></a></li>
-                    <li><a class="row" href="#"><img class="side-nav-img show" src="img/libreria.svg" alt="#"><span class="hide">La tua libreria</span></a></li>
+                    <li><a class="row" href="#"><img class="side-nav-img show" src="img/home.svg" alt="#"><span class="hide hover-first-color">Home</span></a></li>
+                    <li><a class="row" href="#"><img class="side-nav-img show" src="img/search.svg" alt="#"><span class="hide hover-first-color">Cerca</span></a></li>
+                    <li><a class="row" href="#"><img class="side-nav-img show" src="img/libreria.svg" alt="#"><span class="hide hover-first-color">La tua libreria</span></a></li>
                 </ul>
             </div>
             <!-- Playlist nav -->
             <div class="playlist-nav hide">
                 <h4>PLAYLIST</h4>
-                <div class="add-list row">
+                <div class="add-list row hover-first-color">
                     <i class="fa-solid fa-circle-plus"></i><h5>Crea Playlist</h5>
                 </div>
                 <div class="new-list">
                     <ul class="overflow">
-                        <li><a href="#">Nome Playlist</a></li>
-                        <li><a href="#">Nome Playlist</a></li>
-                        <li><a href="#">Nome Playlist</a></li>
-                        <li><a href="#">Nome Playlist</a></li>
-                        <li><a href="#">Nome Playlist</a></li>
-                        <li><a href="#">Nome Playlist</a></li>
-                        <li><a href="#">Nome Playlist</a></li>
+                        <li class="hover-first-color"><a href="#">Nome Playlist</a></li>
+                        <li class="hover-first-color"><a href="#">Nome Playlist</a></li>
+                        <li class="hover-first-color"><a href="#">Nome Playlist</a></li>
+                        <li class="hover-first-color"><a href="#">Nome Playlist</a></li>
+                        <li class="hover-first-color"><a href="#">Nome Playlist</a></li>
+                        <li class="hover-first-color"><a href="#">Nome Playlist</a></li>
+                        <li class="hover-first-color"><a href="#">Nome Playlist</a></li>
                     </ul>
                 </div>
             </div>
@@ -57,7 +57,7 @@
              <!-- Account utente -->
              <div class="account">
                 <div class="download row">
-                    <a href="#"><img class="show" src="img/download.svg" alt="download"></a><span class="hide">Installa app</span>
+                    <a href="#"><img class="show" src="img/download.svg" alt="download"></a><span class="hide hover-first-color">Installa app</span>
                 </div>
                 <div class="user row">
                     <a href="#"><img class="show" src="img/profile.svg" alt="profile"></a><h4 class="hide">Jhon Doe</h4>
@@ -81,7 +81,7 @@
             <!-- Recently Played -->
             <section class="recently-played">
                 <h2>Recently Played</h2>
-                <div class="recent-album flex">
+                <div class="recent-album flex wrap">
                     <div class="col-album">
                         <div class="box-image">
                             <img src="img/metal_lifting.jpg" alt="album-metal">
@@ -149,11 +149,12 @@
                         </div>                        
                     </div>
             </section>
+            <!-- /Recently played -->
             <!-- Create for you -->
             <section class="for-you">
                 <h2>Creato per John Doe</h2>
                 <small>Più ascolti, più accurati saranno i suggerimenti.</small>
-                <div class="recent-album row">
+                <div class="recent-album flex wrap">
                     <div class="col-album">
                         <div class="box-image">
                             <img src="img/radar.jpeg" alt="album-metal">
@@ -176,6 +177,33 @@
                     </div>
             </section>
             <!-- /Create for you -->
+            <!-- Most popular -->
+            <section class="most-popular">
+                <h2>Artisti più popolari</h2>
+                <small>Più ascolti, più accurati saranno i suggerimenti.</small>
+                <div class="recent-album flex wrap">
+                    <div class="col-album">
+                        <div class="box-image">
+                            <img src="img/youg.jpeg" alt="album-young">
+                            <div class="bg-opacity hover-show"></div>
+                            <i class="fa-regular fa-circle-play hover-show"></i>
+                        </div>
+                        <div class="title">
+                            <h4>Lana del Rey</h4>
+                        </div>                        
+                    </div>
+                    <div class="col-album">
+                        <div class="box-image">
+                            <img src="img/einaudi.jpeg" alt="album-einaudi">
+                            <div class="bg-opacity hover-show"></div>
+                            <i class="fa-regular fa-circle-play hover-show"></i>
+                        </div>
+                        <div class="title">
+                            <h4>Ludovico Einaudi</h4>
+                        </div>                        
+                    </div>
+            </section>
+            <!-- /Most popular -->
         </main>
         <!-- /Main -->
     </div>
@@ -188,13 +216,13 @@
                     <img src="img/sinister.jpeg" alt="sinister">
                     <div class="group-title">
                         <h4>Sinister</h4>
-                        <span><a href="#">Brano nome</a></span>
+                        <span><a class="white-underline" href="#">Brano nome</a></span>
                     </div>
                 </div>
             </div>
             <div class="col-nav-left row align-center wrap">
-                <i class="fa-regular fa-heart"></i>
-                <i class="fa-regular fa-folder"></i>
+                <i class="fa-regular fa-heart hover-first-color"></i>
+                <i class="fa-regular fa-folder hover-first-color"></i>
             </div>
         </div>
         <!-- /Left nav -->
@@ -203,13 +231,13 @@
             <div class="media-player row center">
                 <i class="fa-solid fa-shuffle"></i>
                 <i class="fa-solid fa-backward-step"></i>
-                <i class="fa-regular fa-circle-play"></i>
+                <i class="fa-regular fa-circle-play scale"></i>
                 <i class="fa-solid fa-forward-step"></i>
                 <i class="fa-solid fa-rotate-right"></i>
             </div>
             <div class="timing-bar row center">
                 <small class="minutes">0:25</small>
-                <div class="bar"><div class="time-line"></div></div>
+                <div class="bar hover-bar"><div class="time-line circle-head"></div></div>
                 <small class="minutes">4:25</small>
             </div>
         </div>
@@ -219,7 +247,7 @@
             <i class="fa-solid fa-list"></i>
             <i class="fa-solid fa-display"></i>
             <i class="fa-solid fa-volume-high"></i>
-            <div class="volume"><div class="volume-bar"></div></div>
+            <div class="volume hover-bar"><div class="volume-bar circle-head"></div></div>
         </div>
         <!-- /right nav -->
     </footer>
