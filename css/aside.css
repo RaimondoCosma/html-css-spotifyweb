@@ -21,6 +21,11 @@ aside {
 }
 .side-nav li:first-child {
     position: relative;
+    color: var(--first-color);
+}
+.filter {
+    filter: invert(0.6);
+    transition: filter 0.3s;
 }
 .side-nav li:first-child::before {
     content: '';
@@ -100,16 +105,6 @@ aside {
     margin-bottom: .625rem;
 }
 
-/* --------------------
-   HOVER
--------------------- */
-.hover-first-color {
-    transition: color 0.3s;
-}
-.hover-first-color:hover {
-    color: var(--first-color);
-    cursor: pointer;
-}
 /* --------------------
    QUERY
 -------------------- */

@@ -95,9 +95,10 @@ footer {
 -------------------- */
 @media screen and (max-width: 700px) {
     .nav-left, .nav-right {
-        width: 30%;
+        width: 27%;
     }
     .nav-middle {
         width: 40%;
+        margin: auto;
     }
 }

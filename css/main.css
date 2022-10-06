@@ -44,6 +44,7 @@ main {
 .col-album {
     margin: 0 .625rem;
     width: calc(100% / 6 - 20px);
+    cursor: pointer;
 }  
 .col-album .box-image img {
     width: 100%;
