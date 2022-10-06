@@ -1,0 +1,66 @@
+/* --------------------
+   BODY
+-------------------- */
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    height: 100vh;
+    color: var(--first-color);
+}
+/* --------------------
+   PAGE CONTAINER
+-------------------- */
+.page-container {
+    display: flex;
+    height: calc(100% - 5.625rem);
+}
+/* --------------------
+   COMMONS
+-------------------- */
+.flex {
+    display: flex;
+}
+.row {
+    display: flex;
+    align-items: center;
+}
+.wrap {
+    flex-wrap: wrap;
+}
+.space-between {
+    justify-content: space-between;
+}
+.center {
+    justify-content: center;
+}
+.justify-end {
+    justify-content: flex-end;
+}
+.align-center {
+    align-items: center;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+header a {
+    color: var(--first-color);
+}
+footer a {
+    color: var(--second-color);
+}
+i {
+    cursor: pointer;
+}
+img {
+    display: block;
+}
+.recently-played > h2 {
+    margin-left: .625rem;
+}
+.for-you > h2 , .for-you > small, .most-popular > h2, .most-popular > small {
+    margin-left: .625rem;
+}

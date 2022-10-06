@@ -1,0 +1,35 @@
+/* --------------------
+   HOVER
+-------------------- */
+.scale {
+    transition: transform 0.3s;
+}
+.scale:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.hover-show {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.col-album:hover .hover-show {
+    opacity: 1;
+    cursor: pointer;
+}
+.white-underline {
+    transition: 0.3s;
+}
+.white-underline:hover {
+    color: var(--first-color);
+    text-decoration: underline;
+}
+.hover-bar {
+    transition: background-color 0.3s;
+}
+.hover-bar:hover .circle-head {
+    background-color: var(--underline);
+    cursor: pointer;
+}
+.hover-bar:hover .circle-head::after {
+    opacity: 1;
+}
