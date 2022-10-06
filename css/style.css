@@ -14,6 +14,9 @@
 /* --------------------
    COMMONS
 -------------------- */
+.flex {
+    display: flex;
+}
 .row {
     display: flex;
     align-items: center;
@@ -52,6 +55,12 @@ i {
 img {
     display: block;
 }
+.recently-played > h2 {
+    margin-left: .625rem;
+}
+.for-you > h2 , .for-you > small {
+    margin-left: .625rem;
+}
 /* --------------------
    BODY
 -------------------- */
@@ -73,6 +82,7 @@ header {
     height: 5.5rem;
     padding-right: .625rem;
     background-color: var(--header-bg);
+    z-index: 100;
 }
 header span {
     padding: .9375rem 2.8125rem;
@@ -91,6 +101,7 @@ main {
     background-color: var(--main-bg);
     width: calc(100% - 14.375rem);
     overflow-y: auto;   
+    padding: 0 .625rem;
 }
 .menu {
     padding-top: 6.875rem;
@@ -111,20 +122,21 @@ main {
 .menu li a {
     font-size: .75rem;
 }
+
+/* --------------------
+   RECENTLY PLAYED
+-------------------- */
 .recently-played {
-    padding: 2.5rem 1.25rem;
+    padding: 2.5rem 0;
 }
 .recent-album {
-    padding: 1.875rem 0 2.5rem;
-    align-items: stretch;
+    padding-top: 1.875rem;
 }
 .col-album {
-    width: 16%;
-}
-.col-album .box-image {
-    width: 100%;
-}
-.col-album img {
+    margin: 0 .625rem;
+    width: calc(100% / 6 - 20px);
+}  
+.col-album .box-image img {
     width: 100%;
 }
 .recent-album .box-image {
@@ -158,6 +170,22 @@ main {
 .recent-album .title small {
     color: var(--second-color);
 }
+
+/* --------------------
+   FOR YOU
+-------------------- */
+.for-you {
+    padding-bottom: 2.5rem;
+}
+.for-you h2 {
+    padding-bottom: .75rem;
+}
+.for-you small {
+    color: var(--second-color);
+}
+/* --------------------
+   HOVER
+-------------------- */
 .hover-show {
     opacity: 0;
     transition: opacity 0.3s;
