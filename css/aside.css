@@ -115,4 +115,8 @@ aside {
     .account {
         margin-top: auto;
     }
+    .side-nav li:first-child::before {
+        display: none;
+    }
+
 }
