@@ -105,11 +105,15 @@ main {
     width: 1.875rem;
     height: .1875rem;
 }
-
 .menu li a {
     font-size: .75rem;
 }
-
+.recently-played {
+    padding: 2.5rem 1.25rem;
+}
+.recent-album {
+    padding: 1.875rem 0 2.5rem;
+}
 
 /* --------------------
    QUERY
