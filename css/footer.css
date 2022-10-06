@@ -57,11 +57,16 @@ footer {
     border-radius: .625rem;
     cursor: pointer;
 }
-.bar .time-line {
+.bar .time-line, .volume .volume-bar {
     position: relative;
-    width: 20%;
     height: 100%;
     background-color: var(--first-color);
+}
+.bar .time-line {
+    width: 20%;
+}
+.volume .volume-bar {
+    width: 17%;
 }
 .circle-head::after {
     content: '';
@@ -82,12 +87,6 @@ footer {
     height: .25rem;
     border-radius: .625rem;
     cursor: pointer;
-}
-.nav-right .volume .volume-bar {
-    position: relative;
-    width: 20%;
-    height: 100%;
-    background-color: var(--first-color);
 }
 
 /* --------------------
