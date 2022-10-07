@@ -126,11 +126,11 @@ footer {
     .nav-right {
         flex-wrap: wrap;
     }
-    .nav-right .fa-list {
-        width: 20%;
+    .nav-right .fa-list, .fa-display {
+        width: 45%;
     }
-    .nav-right .fa-display {
-        width: 80%;
+    .nav-right .fa-list {
+        text-align: end;
     }
     .nav-right .fa-volume-high {
         width: 20%;
