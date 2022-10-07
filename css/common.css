@@ -52,20 +52,6 @@ img {
 }
 
 /* --------------------
-   QUERY 600px
--------------------- */
-@media screen and (max-width: 600px) {
-    aside {
-        width: 3.125rem;
-    }
-    main {
-        width: calc(100% - 3.125rem);
-    }
-    header {
-        left: 3.125rem;
-    }    
-}
-/* --------------------
    QUERY 480px
 -------------------- */
 @media screen and (max-width: 480px) {

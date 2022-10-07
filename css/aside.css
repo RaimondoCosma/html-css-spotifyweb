@@ -82,9 +82,12 @@ aside {
 }
 
 /* --------------------
-   QUERY
+   QUERY 600px
 -------------------- */
 @media screen and (max-width: 600px) {
+    aside {
+        width: 3.125rem;
+    }
     .hide {
         display: none;
     }

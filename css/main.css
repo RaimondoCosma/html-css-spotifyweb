@@ -93,11 +93,19 @@ main {
     }
 }
 /* --------------------
-   QUERY 700px
+QUERY 700px
 -------------------- */
 @media screen and (max-width: 700px) {
     .col-album {
         width: calc(100% / 2 - 20px);
+    }
+}
+/* --------------------
+   QUERY 600px
+-------------------- */
+@media screen and (max-width: 600px) {
+    main {
+        width: calc(100% - 3.125rem);
     }
 }
 /* --------------------
@@ -107,4 +115,7 @@ main {
     .recent-album .title h4 {
         font-size: .875rem;
     }
+    .page-container {
+        height: calc(100% - 8.625rem);
+    }    
 }

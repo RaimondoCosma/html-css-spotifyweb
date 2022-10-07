@@ -18,7 +18,15 @@ header span {
 }
 
 /* --------------------
-   QUERY
+   QUERY 600px
+-------------------- */
+@media screen and (max-width: 600px) {
+    header {
+        left: 3.125rem;
+    }    
+}
+/* --------------------
+   QUERY 480px
 -------------------- */
 @media screen and (max-width: 480px) {
     header span {
