@@ -17,3 +17,12 @@ header span {
     border-radius: 1.875rem;
     font-size: .875rem;
 }
+
+/* --------------------
+   QUERY
+-------------------- */
+@media screen and (max-width: 480px) {
+    header span {
+        padding: .625rem 1.25rem;
+    }
+}

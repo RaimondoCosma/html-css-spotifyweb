@@ -74,9 +74,6 @@ main {
 .recent-album .title {
     text-align: center;
 }
-.recent-album .title h3 {
-    padding-bottom: .625rem;
-}
 .recent-album .title small {
     color: var(--second-color);
 }
@@ -106,5 +103,11 @@ main {
 @media screen and (max-width: 700px) {
     .col-album {
         width: calc(100% / 2 - 20px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .recent-album .title h4 {
+        font-size: .875rem;
     }
 }
