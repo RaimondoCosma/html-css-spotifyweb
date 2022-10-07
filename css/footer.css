@@ -113,7 +113,7 @@ footer {
         height: 8.625rem;
     }
     .nav-left, .nav-right {
-        width: 45%;
+        width: 47%;
         position: relative;
         bottom: 3.600rem;
     }
@@ -124,9 +124,16 @@ footer {
         flex-wrap: wrap;
     }
     .nav-right .col-480 {
-        width: 20%;
-        margin: 0 15%;
+        width: 10%;
         text-align: center;
+    }
+    .fa-list {
+        margin-left: 35%;
+        margin-right: 5%;
+    }
+    .fa-display {
+        margin-right: 35%;
+        margin-left: 5%;
     }
     .nav-right .fa-volume-high {
         width: 20%;
