@@ -40,7 +40,7 @@ aside {
 .side-nav li {
     font-size: .875rem;
 }
-.side-nav li:first-child, .playlist-nav h4 {
+.side-nav li:first-child, .playlist-nav h4, .user h4 {
     color: var(--first-color);
 }
 .add-list h5 {
