@@ -1,0 +1,67 @@
+/* --------------------
+    TYPOGRAPHY
+-------------------- */
+/* --------------------
+   BODY
+-------------------- */
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    height: 100vh;
+    color: var(--first-color);
+}
+
+/* --------------------
+    HEADER
+-------------------- */
+header span {
+    font-size: .875rem;
+}
+header a {
+    color: var(--first-color);
+}
+
+/* --------------------
+    MAIN
+-------------------- */
+.menu li, main small {
+    color: var(--second-color);
+}
+.menu li a {
+    font-size: .75rem;
+}
+
+/* --------------------
+    ASIDE
+-------------------- */
+aside {
+    color: var(--second-color);
+}
+.side-nav li {
+    font-size: .875rem;
+}
+.side-nav li:first-child, .playlist-nav h4 {
+    color: var(--first-color);
+}
+.add-list h5 {
+    font-size: 1rem;
+}
+.fa-circle-plus {
+    font-size: 2.1875rem;
+}
+.new-list li {
+    font-size: .75rem;
+}
+
+/* --------------------
+    FOOTER
+-------------------- */
+footer a, .col-nav-left i {
+    color: var(--second-color);
+}
+.group-title span {
+    font-size: .75rem;
+}
+.media-player .fa-circle-play {
+    font-size: 1.875rem;
+}

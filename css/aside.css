@@ -6,7 +6,6 @@ aside {
     width: 14.375rem;
     background-color: var(--aside-bg);
     padding: 1.25rem 1.25rem .625rem;
-    color: var(--second-color);
     display: flex;
     flex-direction: column;
 }
@@ -18,11 +17,9 @@ aside {
 }
 .side-nav li {
     margin-bottom: .75rem;
-    font-size: .875rem;
 }
 .side-nav li:first-child {
     position: relative;
-    color: var(--first-color);
 }
 .filter {
     filter: invert(0.6);
@@ -50,17 +47,12 @@ aside {
     flex-grow: 1;
 }
 .playlist-nav h4 {
-    color: var(--first-color);
     padding-bottom: .625rem;
 }
 .add-list {
     margin-bottom: .9375rem;
 }
-.add-list h5 {
-    font-size: 1rem;
-}
 .fa-circle-plus {
-    font-size: 2.1875rem;
     margin-right: .625rem;
 }
 .new-list {
@@ -69,7 +61,6 @@ aside {
 }
 .new-list li {
     margin-bottom: 1.25rem;
-    font-size: .75rem;
 }
 .download {
     padding-bottom: .625rem;

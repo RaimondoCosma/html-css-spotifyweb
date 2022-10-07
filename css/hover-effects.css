@@ -4,6 +4,12 @@
 /* --------------------
    COLOR HOVER
 -------------------- */
+.menu li {
+    transition: color 0.3s;
+}
+.menu li:hover {
+    color: var(--first-color);
+}
 .hover-first-color {
     transition: color 0.3s;
 }

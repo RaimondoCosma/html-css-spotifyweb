@@ -20,21 +20,14 @@ footer {
 .nav-middle {
     width: calc(100% - 27.5rem);
 }
-.col-nav-left i {
-    color: var(--second-color);
-}
 .album-img img {
     height: 2.625rem;
     margin-right: .625rem;
-}
-.group-title span {
-    font-size: .75rem;
 }
 .media-player {
     margin-bottom: .625rem;
 }
 .media-player .fa-circle-play {
-    font-size: 1.875rem;
     margin: 0 1.875rem;
 }
 .media-player i {
