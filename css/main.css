@@ -75,7 +75,9 @@ main {
     text-align: center;
 }
 .recent-album .title small {
+    display: block;
     color: var(--second-color);
+    padding: .5rem 0 .9375rem;
 }
 /* --------------------
    FOR YOU & MOST POPULAR
