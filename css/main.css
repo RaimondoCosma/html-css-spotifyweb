@@ -114,6 +114,7 @@ QUERY 700px
 @media screen and (max-width: 480px) {
     main {
         overflow-x: hidden;
+        text-align: center;
     }
     .col-album {
         width: 60%;
@@ -122,9 +123,6 @@ QUERY 700px
     .recent-album {
         flex-wrap: nowrap;
         overflow-x: auto;
-    }
-    .recent-album .title h4 {
-        font-size: .875rem;
     }
     .page-container {
         height: calc(100% - 8.625rem);
