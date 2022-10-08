@@ -31,5 +31,6 @@ header span {
 @media screen and (max-width: 480px) {
     header span {
         padding: .625rem 1.25rem;
+        font-size: .75rem;
     }
 }

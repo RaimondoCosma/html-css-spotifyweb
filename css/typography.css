@@ -37,7 +37,7 @@ header a {
 aside {
     color: var(--second-color);
 }
-.side-nav li {
+.side-nav li, .download span {
     font-size: .875rem;
 }
 .side-nav li:first-child, .playlist-nav h4, .user h4 {
