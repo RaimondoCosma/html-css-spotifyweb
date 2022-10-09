@@ -44,10 +44,7 @@ i {
 img {
     display: block;
 }
-.recently-played > h2 {
-    margin-left: .625rem;
-}
-.for-you > h2 , .for-you > small, .most-popular > h2, .most-popular > small {
+.recently-played > h2, .for-you > h2 , .for-you > small, .most-popular > h2, .most-popular > small {
     margin-left: .625rem;
 }
 
@@ -58,4 +55,7 @@ img {
     .page-container {
         height: calc(100% - 8.625rem);
     }    
+    .recently-played > h2, .for-you > h2 , .for-you > small, .most-popular > h2, .most-popular > small {
+        margin-left: 0;
+    }
 }
